@@ -1,0 +1,12 @@
+.flip-box {
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
