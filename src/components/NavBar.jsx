@@ -18,7 +18,7 @@ const NavBar = () => {
           <p className="text-lg text-black mb-6">
             We are here to resolve the most complex issue!
           </p>
-          <a className="inline-block bg-orange  hover:bg-green-500 text-white px-6 py-3 rounded-lg transition cursor-pointer">
+          <a href="#contacts" className="inline-block bg-orange  hover:bg-green-500 text-white px-6 py-3 rounded-lg transition cursor-pointer">
             Need Emergency Services?
           </a>
         </div>

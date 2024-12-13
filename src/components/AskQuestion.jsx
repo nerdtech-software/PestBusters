@@ -2,16 +2,21 @@ const AskQuestion = () => {
   return (
     <div>
       <footer className="bg-orange text-white py-6">
-        <div className="flex items-center justify-between px-80 md:px-80">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Text Section */}
-          <div>
+          <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-sm">Ask the Orkin Man</p>
-            <h1 className="text-3xl font-bold">You Have Questions. He Has Answers</h1>
+            <h1 className="text-2xl md:text-3xl font-bold">
+              You Have Questions. He Has Answers
+            </h1>
           </div>
+
           {/* Button Section */}
-          <button className="bg-white text-orange-500 py-2 px-6 rounded text-black hover:bg-[#03C78C]">
-            Contact Us
-          </button>
+          <div className="flex justify-center md:justify-end">
+            <button className="bg-white text-black py-2 px-6 rounded hover:bg-[#03C78C]">
+              Contact Us
+            </button>
+          </div>
         </div>
       </footer>
     </div>
