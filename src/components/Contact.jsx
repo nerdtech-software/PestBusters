@@ -1,5 +1,5 @@
-import React from 'react'
-
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+import React from 'react';
 const Contact = () => {
   return (
     <div>
@@ -10,13 +10,15 @@ const Contact = () => {
         <div className="space-y-6">
           <h2 className="text-xl font-semibold">Contact Us</h2>
           <p className="text-gray-600">
-            📍 <strong>New Jersey, USA</strong>
+        <AddLocationAltIcon className='text-blue-400'/>   <strong>4707 Four Points Rd. 
+Deer Park, AL 36529
+</strong>
           </p>
           <p className="text-gray-600">
-            📞 <strong>0123 456 789</strong>
+            📞 <strong>251-847-3226</strong>
           </p>
           <p className="text-gray-600">
-            ✉️ <strong>info@example.com</strong>
+            ✉️ <strong> office.aepc@gmail</strong>
           </p>
           {/* Map */}
           <iframe
@@ -66,7 +68,7 @@ const Contact = () => {
               type="submit"
               className="bg-orange text-white py-2 px-6  hover:bg-green-600"
             >
-              View All
+              Send Me
             </button>
           </form>
         </div>

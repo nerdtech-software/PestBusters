@@ -14,7 +14,7 @@ const AskQuestion = () => {
           {/* Button Section */}
           <div className="flex justify-center md:justify-end">
             <button className="bg-white text-black py-2 px-6 rounded hover:bg-[#03C78C]">
-              Contact Us
+             <a href="tel:251-847-3226"> Contact Us</a>
             </button>
           </div>
         </div>

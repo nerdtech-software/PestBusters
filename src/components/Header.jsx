@@ -8,36 +8,36 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ScrollLink } from 'react-scroll';
-
+import image from "../image/image.jpg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
       <div className="bg-black h-8  ">
-        <div className='text-white justify-center items-center flex gap-4 py-2 '> 
+        <div className='text-white justify-center items-center flex gap-4 '> 
         <FacebookIcon className='hover:text-orange' />
         <XIcon className='hover:text-orange'/>
         <YouTubeIcon className='hover:text-orange'/>
         <InstagramIcon className='hover:text-orange'/>
       </div>
       </div>
-      <header className="bg-white shadow-xl mx-auto my-7">
+      <header className="bg-white shadow-xl mx-auto ">
         {/* Top Section */}
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center py-3">
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img
-              src="https://ld-wp73.template-help.com/wordpress/prod_11365/v1/wp-content/uploads/2021/05/logo-1.png"
+              src={image}
               alt="Pest Busters"
-              className="h-8"
+              className="h-16 rounded-sm w-28"
             />
             <div>
-              <p className="text-sm text-gray-500">
+              {/* <p className="text-sm text-gray-500">
                 Pest Control <br /> Services
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -47,14 +47,16 @@ const Header = () => {
               <AccessTimeIcon />
               <div>
                 <p>Mon – Fri: 10AM – 7PM</p>
-                <p>Sat – Sun: 10AM – 3PM</p>
+               
               </div>
             </div>
 
             <div className="flex items-center space-x-2">
               <LocationOnIcon />
               <div>
-                <p>4578 Marmora Road, Glasgow</p>
+                <p>4707 Four Points Rd. 
+Deer Park, AL 36529
+</p>
               </div>
             </div>
 
@@ -62,7 +64,7 @@ const Header = () => {
               <CallIcon className="text-orange-500" />
               <div>
                 <p>
-                  Call us:<a className="font-bold" href="tel:+1234567890">+1 (234) 567-890</a>
+                  Call us:<a className="font-bold" href="tel:251-847-3226">251-847-3226</a>
                 </p>
               </div>
             </div>
@@ -70,7 +72,7 @@ const Header = () => {
       
 
           {/* Appointment Button */}
-          <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-orange hidden lg:block"><a  href="tel:+1234567890">   Make an Appointment</a>
+          <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-orange hidden lg:block"><a  href="tel:+1234567890">Make an Appointment</a>
           
           </button>
 
@@ -85,7 +87,7 @@ const Header = () => {
 
         {/* Navbar */}
         <nav className="bg-orange text-white">
-          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center py-2">
+          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center ">
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex flex-wrap space-x-4 lg:space-x-6">
             <li>
@@ -97,17 +99,12 @@ const Header = () => {
             <li>
             <ScrollLink to="service" smooth={true} duration={500}>Services</ScrollLink>
           </li>
-            <li>
-            <ScrollLink to="Projects" smooth={true} duration={500}>Projects</ScrollLink>
-          </li>
-            <li>
-            <ScrollLink to="team" smooth={true} duration={500}>Team</ScrollLink>
-          </li>
+          
               <li><a href="#home" className="hover:underline">Home</a></li>
               <li><a href="#about" className="hover:underline">About</a></li>
               <li><a href="#services" className="hover:underline">Services</a></li>
-              <li><a href="#projects" className="hover:underline">Projects</a></li>
-              <li><a href="#team" className="hover:underline">Team</a></li>
+             
+             
              
               <li><a href="#contacts" className="hover:underline">Contacts</a></li>
             </ul>
