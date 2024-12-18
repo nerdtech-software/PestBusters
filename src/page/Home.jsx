@@ -19,6 +19,10 @@ const Home = () => {
       <NevBar />
       <ServiceProvider />
       <div id="services">
+<<<<<<< HEAD
+=======
+        {" "}
+>>>>>>> 39447dbdaefd44cf195d7f939a47b95e0ad58da6
         <ServiceTypes />
       </div>
       <WorkPrinciple />
