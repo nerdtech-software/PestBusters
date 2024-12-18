@@ -25,7 +25,7 @@ const AboutUs = () => {
         {/* Right Side: Image Section */}
         <div className="lg:w-1/2 flex justify-center">
           <img
-            src="https://ld-wp73.template-help.com/wordpress/prod_11365/v1/wp-content/uploads/2021/05/home-14.jpg"
+            src="https://ld-wp73.template-help.com/wordpress/prod_11365/v1/wp-content/uploads/2021/05/home-14.jpg" 
             alt="Pest Control Services"
             className="w-full h-auto max-w-md lg:max-w-full"
           />

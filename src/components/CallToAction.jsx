@@ -22,7 +22,7 @@ const CallToAction = () => {
         {/* Button */}
         <div className="mt-6 md:mt-0">
           <button className="bg-orange text-white py-3 px-6 rounded font-bold hover:bg-[#03c78c] transition duration-200">
-            MAKE AN APPOINTMENT
+            <a href="tel:251-847-3226">MAKE AN APPOINTMENT</a>
           </button>
         </div>
       </div>
