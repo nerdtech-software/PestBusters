@@ -1,3 +1,4 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import AboutUs from "../components/About";
 import AskQuestion from "../components/AskQuestion";
 import CallToAction from "../components/CallToAction";
@@ -12,9 +13,28 @@ import PestControlSection from "../components/PestControlSection";
 import ServiceProvider from "../components/ServiceProvider";
 import ServiceTypes from "../components/ServiceTypes";
 import WorkPrinciple from "../components/WorkPrinciple";
+
 const Home = () => {
   return (
-    <>
+    <HelmetProvider>
+      {/* Helmet Home - Pest Control Services */}
+      <Helmet>
+        <title>PestControl</title>
+        <meta
+          name="description"
+          content="Professional pest control services for your home and office. Contact us for safe and reliable pest management solutions."
+        />
+        <meta
+          name="keywords"
+          content="pest control, pest management, pest removal, pest prevention"
+        />
+        <link
+          rel="https://pestbusters.netlify.app/"
+          href="https://pestbusters.netlify.app/"
+        />
+      </Helmet>
+
+      {/* Page components */}
       <Header />
       <NevBar />
       <ServiceProvider />
@@ -23,7 +43,7 @@ const Home = () => {
       </div>
       <WorkPrinciple />
       <AskQuestion />
-      <div id="about" >
+      <div id="about">
         <AboutUs />
       </div>
       <Gallery />
@@ -33,9 +53,9 @@ const Home = () => {
         <Contact />
       </div>
       <PestControlSection />
-      <GoogleReviews/>
+      <GoogleReviews />
       <Footer />
-    </>
+    </HelmetProvider>
   );
 };
 

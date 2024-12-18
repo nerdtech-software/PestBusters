@@ -10,7 +10,7 @@ import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useState } from 'react';
 import { ScrollLink } from 'react-scroll';
-import image from "../image/image.jpg";
+import image from "../image/img.jpg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
