@@ -1,5 +1,4 @@
-
-import google from "../image/google.png";
+import { images } from "../../assets/image";
 const reviews = [
   {
     id: 1,
@@ -154,7 +153,7 @@ const GoogleReviews = () => {
             {/* Google Icon */}
             <div className="flex items-center justify-center mt-4">
               <img
-                 src={google}
+                 src={images.google}
                 alt="Google"
                 className="w-10 h-10 mr-2  "
               />
