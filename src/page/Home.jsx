@@ -37,11 +37,11 @@ const Home = () => {
       {/* Page components */}
       <Header />
       <NevBar />
-      <ServiceProvider />
+     
       <div id="services">
         <ServiceTypes />
       </div>
-      <WorkPrinciple />
+    
       <AskQuestion />
       <div id="about">
         <AboutUs />

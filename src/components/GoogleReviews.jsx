@@ -2,30 +2,30 @@ import { images } from "../assets/image";
 const reviews = [
   {
     id: 1,
-    name: "Jeff Haydn",
-    daysAgo: "7 days ago",
+    name: "Antoinette Williams",
+    daysAgo: "a month ago",
     comment:
-      "The Website Guy Team have been great to deal with. Professional, knowledgeable and extremely helpful.",
-    initial: "J",
-    rating:"★★★★"
+      "I was so impressed with how quickly AT EASE was able to schedule a visit to my property! And it was very helpful that they reviewed the inspection report with me! I’ll definitely use them again!.",
+    initial: "A",
+    rating:"★★★★★"
   },
   {
     id: 2,
-    name: "Brian Rohan",
-    daysAgo: "21 days ago",
+    name: "Rick Maglione",
+    daysAgo: "a month ago",
     comment:
-      "Zac and Jeff are doing an exceptional job of managing our online presence. The team have been fantastic.",
-    initial: "B",
-    rating:"★★★★"
+      "Thought I may have had a termite problem. At Ease understood the seriousness of the situation and responded quickly.  I knew they were a trustworthy business when I was advised it was only ants, and not those home-destroying termites.  They treated the problem and put my mind At Ease.  5 Stars.",
+    initial: "R",
+    rating:"★★★★★"
   },
   {
     id: 3,
-    name: "TANIA RODGER",
+    name: "Calvin Coaker",
     daysAgo: "21 days ago",
     comment:
-      "Look no further if you're looking for guys that know what is current and fresh. My website is AMAZING even better than I imagined.",
+      "At Ease pest control did a amazing job handling our insect problems in a very timely professional manner. They made the experience very easy and we highly recomend them as they did a great hov.",
     initial: "T",
-    rating:"★★★★"
+  rating:"★★★★★"
   },
   {
     id: 4,
@@ -34,47 +34,47 @@ const reviews = [
     comment:
       "Jeff, Zac, and the team are a pleasure to work with. They are professional and are quick to help.",
     initial: "G",
-    rating:"★★★★"
+   rating:"★★★★★"
   },
   {
     id: 5,
-    name: "Kris Morris",
+    name: "Larry Hubbard",
     daysAgo: "1 month ago",
-    comment: "Very knowledgeable & also very prompt service! Highly recommend Zac.",
-    initial: "K",
-     rating:"★★★★"
+    comment: "Very pleased with service and ease of payment. Electronically notified of service date in advance. Highly recommend this company",
+    initial: "L",
+    rating:"★★★★★"
   },
   {
     id: 6,
-    name: "Rebecca Leggett",
+    name: "Alicia Henson",
     daysAgo: "2 months ago",
-    comment: "Zac is great to communicate with, he is quick to reply and gets the job done!",
-    initial: "R",
-     rating:"★★★★"
+    comment: "Great customer service! Great response time! Made sure the problem was taken care of instead of a one and done",
+    initial: "A",
+    rating:"★★★★★"
   },
   {
     id: 7,
-    name: "Lakes Tiles",
+    name: "Frank Dickey",
     daysAgo: "2 months ago",
     comment:
-      "We love our new website and are currently having another one created by Jeff and the team.",
-    initial: "L",
+      "At Ease Pest Control is great!!! Good people to do business with . And they do a great job eliminating pests!!!!",
+    initial: "F",
      rating:"★★★"
   },
   {
     id: 8,
-    name: "Sean Dickson",
+    name: "Luke Gunter",
     daysAgo: "3 months ago",
     comment:
-      "The Website Guy, through the efforts of Jeff, Zac, and Gemma, worked tirelessly in the setup of our site.",
-    initial: "S",
-     rating:"★★★★"
+      "Great service and even better people!",
+    initial: "L",
+    rating:"★★★★★"
   },
 ];
 
 const GoogleReviews = () => {
   return (
-    <div className="py-10 bg-white m-20">
+    <div className=" bg-white m-20">
       {/* Header */}
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-800">Google Reviews</h2>
@@ -113,71 +113,72 @@ const GoogleReviews = () => {
 
   {/* Right Section */}
   <button className="bg-orange hover:bg-green-400 text-white text-sm sm:text-base font-medium py-2 px-4 rounded transition duration-200">
-    Write A Review
+  <a href="https://www.google.com/maps/place/At+Ease+Pest+Control/@31.0929946,-88.1489245,9z/data=!4m8!3m7!1s0xada4f8c6dee4e7ad:0x932c6e43167af9c5!8m2!3d31.0929946!4d-88.1489245!9m1!1b1!16s%2Fg%2F11wbg73hw2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Write A Review</a>
   </button>
 </div>
 
 
-      {/* Review Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-10">
-        {reviews.map((review) => (
-          <div
-            key={review.id}
-            className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6 text-center"
-          >
-          
-           
-            
-                <span className="text-yellow-500 text-xl">
-                {review.rating}
-              </span>
-            
-           
-
-            {/* Comment */}
-            <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-              {review.comment}
-            </p>
-            <p className="text-blue-600 font-medium cursor-pointer hover:underline">
-              Read more
-            </p>
-
-            {/* User Info */}
-            <div className="flex flex-col items-center mt-4">
-              <div className="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg font-bold">
-                {review.initial}
-              </div>
-              <h4 className="mt-2 font-semibold text-gray-800">{review.name}</h4>
-              <p className="text-sm text-gray-500">{review.daysAgo}</p>
-            </div>
-
-            {/* Google Icon */}
-            <div className="flex items-center justify-center mt-4">
-              <img
-                 src={images.google}
-                alt="Google"
-                className="w-10 h-10 mr-2  "
-              />
-              <span className="text-gray-600 text-sm">Posted on</span>
-              <a
-                href="#"
-                className="text-blue-500 text-sm ml-1 hover:underline"
-              >
-                Google
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="text-center mt-8">
-          <button
-            
-            className="bg-orange hover:bg-aqua-700 text-white py-2 px-4 rounded transition"
-          >
-          <a href="">  Load More</a>
-          </button>
+     {/* Review Cards */}
+<div className="px-4 sm:px-6 lg:px-10 py-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    {reviews.map((review) => (
+      <div
+        key={review.id}
+        className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6 text-center"
+      >
+        {/* Rating */}
+        <div className="flex justify-center items-center mb-4">
+          <span className="text-yellow-500 text-lg sm:text-xl font-bold">
+            {review.rating} 
+          </span>
         </div>
-    </div>
+
+        {/* Comment */}
+        <p className="text-gray-600 text-sm sm:text-base mb-4 line-clamp-3">
+          {review.comment}
+        </p>
+        <p className="text-blue-600 font-medium cursor-pointer hover:underline">
+          Read more
+        </p>
+
+        {/* User Info */}
+        <div className="flex flex-col items-center mt-4">
+          <div className="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg font-bold">
+            {review.initial}
+          </div>
+          <h4 className="mt-2 font-semibold text-gray-800 text-sm sm:text-base">
+            {review.name}
+          </h4>
+          <p className="text-xs sm:text-sm text-gray-500">{review.daysAgo}</p>
+        </div>
+
+        {/* Google Icon */}
+        <div className="flex items-center justify-center mt-4">
+          <img
+            src={images.google}
+            alt="Google"
+            className="w-8 h-8 sm:w-10 sm:h-10 mr-2"
+          />
+          <span className="text-gray-600 text-xs sm:text-sm">Posted on</span>
+          <a
+            href="https://www.google.com/maps/place/At+Ease+Pest+Control/@31.0929946,-88.1489245,9z/data=!4m8!3m7!1s0xada4f8c6dee4e7ad:0x932c6e43167af9c5!8m2!3d31.0929946!4d-88.1489245!9m1!1b1!16s%2Fg%2F11wbg73hw2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            className="text-blue-500 text-xs sm:text-sm ml-1 hover:underline"
+          >
+            Google
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Load More Button */}
+  <div className="text-center mt-6">
+    <button className="bg-orange-500 hover:bg-orange-600 text-white text-sm sm:text-base py-2 px-6 rounded transition">
+      <a href="#">Load More</a>
+    </button>
+  </div>
+</div>
+</div>
   );
 };
 

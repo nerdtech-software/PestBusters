@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div>
       {/* Social Media Bar */}
-      <div className="bg-black h-8">
+      <div className="bg-black py-1 ">
         <div className="text-white justify-center items-center flex gap-4">
           <FacebookIcon className="hover:text-orange" />
           <YouTubeIcon className="hover:text-orange" />
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="container mx-auto px-4 flex flex-wrap justify-between items-center cursor-pointer">
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex flex-wrap space-x-4 lg:space-x-6">
-              <li className='hover:text-red-200'>
+              <li >
                 <ScrollLink to="home" smooth={true} duration={500}>
                   Home
                 </ScrollLink>

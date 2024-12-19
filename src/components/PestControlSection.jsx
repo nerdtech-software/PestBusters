@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const PestControlSection = () => {
   const Data = [
@@ -13,7 +13,7 @@ const PestControlSection = () => {
       img: "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/05/featured-image-termite-treatment.jpeg-1.jpg",
       title: "Extermination and Treatment",
       details:
-        "Once we have any infestations taken care of, we move to a once a quarter treatment. It’s very simple, we can spray just the outside of your home and guarantee that you will have a bug-free home. ",
+        "Once we have any infestations taken care we move to a once a quarter treatment. we can spray just the outside of your home and guarantee that you will have a bug-free home. ",
       icon: "💧",
     },
     {
@@ -32,15 +32,6 @@ const PestControlSection = () => {
     },
   ];
 
-  const [visibleItems, setVisibleItems] = useState(2);
-
-  const showMore = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 2);
-  };
-  const showLess = () => {
-    setVisibleItems((prevVisibleItems) => Math.max.prevVisibleItems-2 , 2);
-  };
-
   return (
     <div className="py-12 bg-white">
       {/* Header */}
@@ -53,52 +44,39 @@ const PestControlSection = () => {
         </h1>
         <p className="text-gray-600 mt-4">
           It doesn’t matter what type you have, we have solutions. Roaches,
-          termites, ants, bats, even spider issues. We can help! Just call {" "}
+          termites, ants, bats, even spider issues. We can help! Just call{" "}
           <span className="font-semibold">251-847-2077</span>
         </p>
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 place-items-center">
-        {Data.slice(0, visibleItems).map((item, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 px-4">
+        {Data.map((item, index) => (
           <div
             key={index}
-            className="max-w-sm bg-gray-50 rounded-lg shadow-lg overflow-hidden text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            className="max-w-sm w-full bg-gray-50 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col"
           >
-            {/* Image with Icon */}
-            <div className="relative">
+            {/* Image */}
+            <div>
               <img
                 src={item.img}
                 alt={item.title}
-                className="w-96 h-48 object-cover"
+                className="w-full h-48 object-cover"
               />
-              {/* <div className="absolute top-3 left-3 bg-green-500 p-2 rounded-full">
-                <span className="text-white text-xl">{item.icon}</span>
-              </div> */}
             </div>
 
             {/* Content */}
-            <div className="p-5">
-              <h3 className="text-2xl font-semibold text-gray-800">
+            <div className="p-5 flex-grow">
+              <h3 className="text-xl font-semibold text-gray-800">
                 {item.title}
               </h3>
-              <p className="text-gray-600 mt-2">{item.details}</p>
+              <p className="text-gray-600 mt-2 line-clamp-3">
+                {item.details}
+              </p>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Show More Button */}
-      {visibleItems < Data.length && (
-        <div className="text-center mt-8">
-          <button
-            onClick={showMore}
-            className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700"
-          >
-            Show More
-          </button>
-        </div>
-      )}
     </div>
   );
 };

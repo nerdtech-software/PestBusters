@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
  
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className=" bg-gray-100 flex items-center justify-center py-10 ">
       <div className="max-w-7xl w-full p-10 grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-lg rounded-lg">
         {/* Contact Info Section */}
         <div className="space-y-6">
