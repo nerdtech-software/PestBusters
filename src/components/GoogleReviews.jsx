@@ -82,40 +82,41 @@ const GoogleReviews = () => {
           What our happy clients say about us
         </p>
       </div>
-      <div className="flex items-center justify-between bg-gray-100 p-6 rounded-lg shadow-md">
-      {/* Left Section */}
-      <div className="flex items-center space-x-4">
-        {/* Google Logo */}
-        <h3 className="text-gray-800 text-4xl font-medium">
-          <span className="text-blue-500 font-bold text-4xl">G</span>
-          <span className="text-red-500 font-bold text-4xl">o</span>
-          <span className="text-yellow-500 font-bold text-4xl">o</span>
-          <span className="text-blue-500 font-bold text-4xl">g</span>
-          <span className="text-green-500 font-bold text-4xl">l</span>
-          <span className="text-red-500 font-bold text-4xl">e</span>
-          <span className="ml-2 text-gray-700 font-semibold">Rating</span>
-        </h3>
+      <div className="flex flex-col sm:flex-row items-center sm:justify-between bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md space-y-4 sm:space-y-0">
+  {/* Left Section */}
+  <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+    {/* Google Logo */}
+    <h3 className="text-gray-800 text-2xl sm:text-4xl font-medium text-center sm:text-left">
+      <span className="text-blue-500 font-bold">G</span>
+      <span className="text-red-500 font-bold">o</span>
+      <span className="text-yellow-500 font-bold">o</span>
+      <span className="text-blue-500 font-bold">g</span>
+      <span className="text-green-500 font-bold">l</span>
+      <span className="text-red-500 font-bold">e</span>
+      <span className="ml-2 text-gray-700 font-semibold">Rating</span>
+    </h3>
 
-        {/* Rating */}
-        <div className="flex items-center space-x-2  ">
-          <span className="text-4xl font-bold text-gray-800">5.0</span>
-          <div className="flex">
-            {/* 5 Star Icons */}
-            {[...Array(5)].map((_, index) => (
-              <span key={index} className="text-yellow-500 text-xl">
-                ★
-              </span>
-            ))}
-          </div>
-          <span className="text-gray-600 text-sm">202 reviews</span>
-        </div>
+    {/* Rating */}
+    <div className="flex flex-col sm:flex-row items-center sm:space-x-2">
+      <span className="text-3xl sm:text-4xl font-bold text-gray-800">5.0</span>
+      <div className="flex space-x-1">
+        {/* 5 Star Icons */}
+        {[...Array(5)].map((_, index) => (
+          <span key={index} className="text-yellow-500 text-lg sm:text-xl">
+            ★
+          </span>
+        ))}
       </div>
-
-      {/* Right Section */}
-      <button className="bg-orange hover:bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded transition duration-200 ">
-        Write A Review
-      </button>
+      <span className="text-gray-600 text-sm sm:text-base">202 reviews</span>
     </div>
+  </div>
+
+  {/* Right Section */}
+  <button className="bg-orange hover:bg-green-400 text-white text-sm sm:text-base font-medium py-2 px-4 rounded transition duration-200">
+    Write A Review
+  </button>
+</div>
+
 
       {/* Review Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-10">
