@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import AboutUs from "../components/About";
+import AboutUs from "../components/AboutUs";
 import AskQuestion from "../components/AskQuestion";
 import CallToAction from "../components/CallToAction";
 import Contact from "../components/Contact";

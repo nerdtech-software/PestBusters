@@ -31,7 +31,7 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img
-              src={images.img} // Corrected image path
+              src={images.logo} // Corrected image path
               alt="Pest Busters"
               className="h-16 rounded-sm w-28"
             />

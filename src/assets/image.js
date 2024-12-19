@@ -1,7 +1,7 @@
 import google from './image/google.png';
-import img from './image/img.jpg';
+import logo from './image/logo.jpg';
 
 export const images = {
     google,
-    img,
+    logo
 };
