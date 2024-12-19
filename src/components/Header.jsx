@@ -9,7 +9,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import image from "../image/img.jpg";
+import { images } from '../assets/image'; // Corrected import path
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img
-              src={image}
+              src={images.img} // Corrected image path
               alt="Pest Busters"
               className="h-16 rounded-sm w-28"
             />
@@ -80,7 +80,7 @@ const Header = () => {
 
         {/* Navbar */}
         <nav className="bg-orange text-white cursor-pointer">
-          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center cursor-pointer ">
+          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center cursor-pointer">
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex flex-wrap space-x-4 lg:space-x-6">
               <li className='hover:text-red-200'>
@@ -113,7 +113,7 @@ const Header = () => {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="lg:hidden bg-orange p-4 cursor-pointer">
-              <ul className="flex flex-col space-y-4 ">
+              <ul className="flex flex-col space-y-4">
                 <li>
                   <ScrollLink to="home" smooth={true} duration={500}>
                     Home
