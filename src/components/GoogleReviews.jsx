@@ -59,14 +59,14 @@ const reviews = [
     comment:
       "At Ease Pest Control is great!!! Good people to do business with . And they do a great job eliminating pests!!!!",
     initial: "F",
-     rating:"★★★"
+     rating:"★★★★★"
   },
   {
     id: 8,
     name: "Luke Gunter",
     daysAgo: "3 months ago",
     comment:
-      "Great service and even better people!",
+      "Great service and even better people! Good people to do business with . And they do a great job",
     initial: "L",
     rating:"★★★★★"
   },

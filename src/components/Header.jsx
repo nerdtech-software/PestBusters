@@ -1,12 +1,9 @@
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CallIcon from '@mui/icons-material/Call';
 import CloseIcon from '@mui/icons-material/Close';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { images } from '../assets/image'; // Corrected import path
@@ -17,31 +14,25 @@ const Header = () => {
   return (
     <div>
       {/* Social Media Bar */}
-      <div className="bg-black py-1 ">
-        <div className="text-white justify-center items-center flex gap-4">
-          <FacebookIcon className="hover:text-orange" />
-          <YouTubeIcon className="hover:text-orange" />
-          <InstagramIcon className="hover:text-orange" />
-        </div>
-      </div>
+     
 
       {/* Header Section */}
-      <header className="bg-white shadow-xl mx-auto">
-        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center py-3">
+      <header className="bg-[#111216] shadow-xl mx-auto">
+        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center py-1">
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img
               src={images.logo} // Corrected image path
               alt="Pest Busters"
-              className="h-16 rounded-sm w-28"
+              className="h-16 rounded-sm w-40"
             />
           </div>
 
           {/* Contact Info */}
-          <div className="hidden lg:flex items-center space-x-6 text-sm text-gray-600">
+          <div className="hidden lg:flex items-center space-x-6 text-sm text-white">
             <div className="flex items-center space-x-2">
-              <AccessTimeIcon />
-              <p>Mon – Fri: 10AM – 7PM</p>
+              <AccessTimeIcon className='text-white' />
+              <p>Mon – Fri: 8AM – 5PM</p>
             </div>
 
             <div className="flex items-center space-x-2">
@@ -64,14 +55,10 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Appointment Button */}
-          <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-orange hidden lg:block">
-            <a href="tel:+1234567890">Make an Appointment</a>
-          </button>
-
+         
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden text-orange-500 p-2 rounded-lg"
+            className="lg:hidden text-white p-2 rounded-lg "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}

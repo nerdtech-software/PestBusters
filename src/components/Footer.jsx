@@ -5,7 +5,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
     return (
       <footer className="bg-gray-900 text-white py-8 text-center ">
-        <p className="text-4xl  ">24/7 Emergency Services</p>
+        <p className="text-4xl  ">For Services</p>
         <p className="text-orange text-4xl">Tel: 251-847-3226 </p>
         <div className="flex justify-center space-x-4 mt-4 ">
           <a href="#" className="text-gray-400 hover:text-orange"><InstagramIcon/></a>

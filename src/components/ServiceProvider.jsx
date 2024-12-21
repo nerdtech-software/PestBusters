@@ -18,7 +18,7 @@ const ServiceProvider = () => {
               24/7 Emergency <br /> Services
             </h2>
             <p className="text-orange-500 text-xl md:text-2xl mt-4">
-              Tel: (719) 445-2808
+              Tel: 251-847-
             </p>
             <p className="text-gray-500 text-sm md:text-lg mt-2">
               If you need our help immediately, we are at your service day and <br /> night! Just call us!

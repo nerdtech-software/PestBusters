@@ -7,7 +7,7 @@ const AskQuestion = () => {
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-sm">Ask the Orkin Man</p>
             <h1 className="text-2xl md:text-3xl font-bold">
-              You Have Questions. He Has Answers
+            You have Questions, We have Answers
             </h1>
           </div>
 
